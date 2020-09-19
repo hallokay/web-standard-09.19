@@ -1,0 +1,65 @@
+
+/*  */
+.wrap {
+
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background: rgba(0,0,0,.3);
+   
+}
+/* skip */
+.skip a {
+    position: absolute;
+    top: -99px;left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    line-height: 30px;
+    padding: 10px;
+    min-width: 140px;
+    text-align: center;
+
+}
+.skip a:active,
+.skip a:focus {
+    top: 0;
+}
+
+/* header */
+#header {
+    background: url(/img/header_bg.jpg) center/cover repeat-x;
+    height: 40vh;
+}
+.header_menu {
+   text-align: right;
+   /* padding: 0 30px; */
+}
+.header_menu a{
+    display: inline-block;
+    padding: 10px 0 10px 13px;
+    color: #fff;
+}
+
+.header_tit {
+    text-align: center;
+    color: #fff;
+}
+/* 컨텐츠 */
+.cont_nav {
+
+}
+
+.cont_tit {
+
+}
+.cont_banner {
+
+}
+.cont_cont {
+
+}
+
+@media (max-width: 1024px){
+    .container {width: 95%;}
+}
