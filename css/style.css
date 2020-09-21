@@ -1,20 +1,18 @@
 
 /*  */
-.wrap {
-
-}
 .container {
     width: 1000px;
     margin: 0 auto;
-    background: rgba(0,0,0,.3);
-   
+    /* background-color: rgba(0,0,0,.3); */
 }
+
+
 /* skip */
 .skip a {
     position: absolute;
     top: -99px;left: 0;
     color: #fff;
-    background: rgba(0,0,0,0.4);
+    background: #222;
     line-height: 30px;
     padding: 10px;
     min-width: 140px;
@@ -26,10 +24,12 @@
     top: 0;
 }
 
+
+
 /* header */
 #header {
     background: url(/img/header_bg.jpg) center/cover repeat-x;
-    height: 40vh;
+    height: 50vh;
 }
 .header_menu {
    text-align: right;
@@ -44,15 +44,104 @@
 .header_tit {
     text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    text-transform: uppercase;
+
 }
+
+.header_tit h1 {
+    background: #4aa8d4;
+    display: inline-block;
+    font-size: 28px;
+    padding: 8px 20px;
+
+}
+
+.header_tit span {
+    display: inline-block;
+    background: #2698cb;
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-top: -5px;
+}
+
+/* 헤더 아이콘 */
+.header_icon {
+    text-align: center;
+    margin-top: 30px;
+}
+.icon {
+    background: url(/img/icon.png);
+    width: 60px; height: 60px;
+    display: inline-block;
+    margin: 0 3px;
+}
+.h_icon1 {
+    background-position: 0 0;
+}
+.h_icon2 {
+    background-position: 0 -60px;
+}
+.h_icon3 {
+    background-position: 0 -120px;
+}
+.h_icon4 {
+    background-position: 0 -180px;
+}
+
+.h_icon1:hover {
+    background-position: -60px 0;
+}
+.h_icon2:hover {
+    background-position: -60px -60px;
+}
+.h_icon3:hover {
+    background-position: -60px -120px;
+}
+.h_icon4:hover {
+    background-position: -60px -180px;
+}
+
+
+
 /* 컨텐츠 */
-.cont_nav {
-
+/* 전체메뉴 */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.nav > div ol {
+    columns: 2;
+    column-gap: 100px;
+}
+.nav > div:last-child ol{
+    columns: 1;
+}
+.nav h3 {
+    font-size: 18px;
+    color: #25a2d0;
+    margin-bottom: 4px;
+}
+.nav li a:hover {
+    text-decoration: underline;
 }
 
+/* 컨텐츠 타이틀 */
 .cont_tit {
+    /* background: #000; */
+}
+.c_tit {
 
 }
+.c_icon{
+    background-position: 0 0;
+}
+
 .cont_banner {
 
 }
