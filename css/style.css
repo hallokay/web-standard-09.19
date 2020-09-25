@@ -29,11 +29,10 @@
 /* header */
 #header {
     background: url(/img/header_bg.jpg) center/cover repeat-x;
-    height: 50vh;
 }
+
 .header_menu {
    text-align: right;
-   /* padding: 0 30px; */
 }
 .header_menu a{
     display: inline-block;
@@ -72,7 +71,7 @@
 /* 헤더 아이콘 */
 .header_icon {
     text-align: center;
-    margin-top: 30px;
+    padding-bottom: 30px;
 }
 .icon {
     background: url(/img/icon.png);
@@ -110,14 +109,23 @@
 
 /* 컨텐츠 */
 /* 전체메뉴 */
-.nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
+#cont_nav {
+    background: #f6fdff;
 }
+.nav {
+    justify-content: space-between;
+    padding: 30px 0;
+    display: none;
+}
+
+.nav.open {
+    display: flex;
+}
+
 .nav > div ol {
     columns: 2;
-    column-gap: 100px;
+    column-gap: 50%;
+    white-space: nowrap;
 }
 .nav > div:last-child ol{
     columns: 1;
@@ -133,18 +141,77 @@
 
 /* 컨텐츠 타이틀 */
 .cont_tit {
-    /* background: #000; */
+    background: #eaf7fd;
+    position: relative;
 }
 .c_tit {
-
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 5px 0;
+    letter-spacing: .2em;
+    color: #2c94c4;
 }
-.c_icon{
-    background-position: 0 0;
+.c_btn {
+    background-position: 0 -600px;
+    position: absolute;
+    top: 50%; right: 10%;
+    transform: translateY(-50%);
+}
+.c_btn.active {
+    background-position: 0 -660px;
 }
 
-.cont_banner {
-
+.c_btn:hover {
+    background-position: -60px -600px;
 }
+.c_btn.active:hover {
+    background-position: -60px -660px;
+} 
+
+/* contents banner */
+#cont_banner {
+ background: #dceff7;
+}
+.banner {
+position: relative;
+padding: 30px 0;
+}
+.ban_img {
+    display: flex;
+    justify-content: space-between;
+ 
+} 
+.ban_img img {
+    flex-shrink: 1;
+    border: 3px solid #dcdcdc;
+    transition: all .3s ease;
+}
+.ban_img img:hover {
+    border: 3px solid #98bcdc;
+}
+.b_icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 43px;
+    height: 43px;
+}
+.prev {
+    left: -80px;
+    background-position: -150px 0;
+}
+.next {
+    right: -80px;
+    background-position: -150px -43px;
+}
+.prev:hover {
+    background-position: -193px 0;
+}
+.next:hover {
+    background-position: -193px -43px;
+}
+
 .cont_cont {
 
 }

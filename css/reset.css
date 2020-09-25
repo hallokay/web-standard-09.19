@@ -40,7 +40,8 @@ dl,ul,li,ol,menu{
 }
 /* 이미지 비디오 */
 img, video{
-    width: 100%;
+    /* width: 100%; */
+    display: block;
 }
 
 /*제목 초기화*/
