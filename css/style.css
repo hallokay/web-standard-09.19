@@ -346,6 +346,7 @@ padding: 30px 0;
     width: 30%;
 }
 
+/* col2 게시판 유형3  */
 .notice3 li {
     padding: 5px 0;
 }
@@ -370,6 +371,61 @@ padding: 30px 0;
 .notice3 span {
     font-size: 12px;
 }
+
+
+/* col4 mouse over */
+
+.notice_hover ul{
+    display: flex;
+}
+
+.notice_hover li {
+    width: 33.33%;
+    overflow: hidden;
+    text-align: center;
+   
+}
+
+.hover_img {
+    position: relative;
+    display: block;
+    
+}
+.hover_img img {
+    width: 100%;
+    transition: all .25s ease;
+}
+.hover_img em {
+    position: absolute;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;  
+    font-size: 10px;
+}
+.hover1 em {
+    top: 0;
+    height: 100%;
+}
+.hover2 em {
+    bottom: 0;
+}
+.hover_img:hover em {
+    visibility: visible;
+}
+.hover_tit {
+   display: inline-block;
+   padding-top: 3px;
+   font-size: 10px;
+   white-space: nowrap;
+   text-transform: uppercase;
+}
+
+/* 반응형 */
 @media (max-width: 1024px){
     .container {width: 95%;}
 }
