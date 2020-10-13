@@ -1,7 +1,7 @@
 
 /* global*/
 .container {
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
     /* background-color: rgba(0,0,0,.3); */
 }
@@ -124,12 +124,12 @@
     display: flex;
 }
 
-.nav > div ol {
+.nav > div ul {
     columns: 2;
-    column-gap: 50%;
+    column-gap: 35%;
     white-space: nowrap;
 }
-.nav > div:last-child ol{
+.nav > div:last-child ul{
     columns: 1;
 }
 .nav h3 {
@@ -217,6 +217,7 @@ padding: 30px 0;
 /* contents  */
 #cont_cont {
     background: #f6fdff;
+    padding-bottom: 30px;
 }
 .cont {
     display: flex;
@@ -303,7 +304,7 @@ padding: 30px 0;
     font-weight: bold;
     text-transform: uppercase;
 }
-.notice ul li {
+.dot ul li {
     position: relative;
     padding-left: 8px;
 }
@@ -516,7 +517,8 @@ padding: 30px 0;
     position: relative;
     border: 1px solid #ccc;
     overflow: hidden;
-    height: 300px;
+    height: 270px;
+    margin-top: 25px;
 }
 
 .gallery_btn {
@@ -525,7 +527,6 @@ padding: 30px 0;
 }
 .gallery_btn ul {
     display: flex;
-
 }
 .gal_btn a{
     background: url(/img/icon.png) no-repeat;
@@ -543,13 +544,99 @@ padding: 30px 0;
 .gal_btn3 a:hover {background-position: -173px -166px;}
 .gal_btn4 a:hover {background-position: -173px -189px;}
 
+.gallery_img {
+    overflow: hidden;
+}
 .gallery_img img{
     width: 100%;
+    overflow: hidden;
 }
 
 /* col3 login */
+#login_form {
+    background: #f2f4f5;
+    padding: 15px;
+    font-size: 12px;    
+}
+.login_header{
+    display: flex;
+    overflow: hidden;
+    height: 30px;
+}
+.lh_check {
+padding-right: 15px;
+}
+.lh_ip em{
+    color: #0093bd;
+    text-decoration: underline;
+}
+.login_main {
+/* position: relative; */
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.input_txt {
+    width: 90%;
+    height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #bebebe;
+    margin-bottom: 3px;
+    background: #fff;
+}
 
+.lm_btn { 
+    width: 70px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #bebebe;
+}
+.login_footer {
+    margin-top: 5px;
+}
+.login_footer li {
+    display: inline;
+}
 
+/* pop up */
+.popup {
+    margin-top: 10px;
+}
+.popup ul {
+    display: flex;
+    overflow: hidden;
+}
+.popup li {
+    width: 95px;
+    margin-right: 5px;
+}
+.popup img {
+    width: 100%;
+}
+
+#footer {
+    border-top: 1px solid #eee;
+}
+.footer {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 12px;
+}
+.footer ul {
+    margin-bottom: 20px;
+}
+.footer li {
+    position: relative;
+    display: inline;
+    padding: 0 7px;
+}
+.footer .f_line::after {
+    position: absolute;
+    top: 0; left: 0;
+    content: '';
+    width: 1px;
+    height: 17px;
+    background: #ccc;
+}
 /* 반응형 */
 @media (max-width: 1024px){
     .container {width: 95%;}
